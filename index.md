@@ -58,8 +58,12 @@ The new features are implemented in the DbConnection class (DbConnection.py) and
 To expose these options to the user, the management class (management.py) has been extended with new methods available to the Trader base class. These methods contain the logic to make the appropriate methods calls in DbConnection class, retrieve the datasets and feed them into the “Pandas” data science library and plot the data graphically using a bar chart.
 Each of these new methods require two input parameters from which to generate the datasets, either a country and industry or a country and sector. Because the user may know what countries and sectors are available in the database/collections, two new helper functions have been added to the DbConnection class, one to retrieve all countries and another to retrieve all sectors.   
 
+![stock_prices_services_usa](/capstone_project/stock_prices_for__services_sector_usa.PNG)
+
 The figure above demonstrates option to plot stock prices for the services sector in USA. First, the user selects the option number from the menu to plot the stock prices, provides the name of the sector which is Services and the name of the country which is USA. Depending on the dataset size, the plot may have to be zoomed in several time as it was the case here to visualize the content properly. 
  
+![stock_prices_industry_usa](/capstone_project/stock_prices_for__toys_industry_usa.PNG) 
+
 In the figure above, the user selects the option to plot stock prices for the toys and games industry in USA. 
 These options aid the trader to make informed decisions about which stock tickers are best performing in terms of stock price and recommendation score for a given sector or industry per given country.
 Because markets are always changing, the database (DbConnection) class was extended with a new method to let the Manager update the analyst recommendation for a given stock ticker, option which is now available to the Manger class object. 
