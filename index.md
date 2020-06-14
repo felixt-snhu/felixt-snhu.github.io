@@ -47,3 +47,26 @@ Implementing the algorithms for the menus and prompts required both thought and 
 My plan was to construct a dictionary out of the function names and map them to numbers, such that instead of typing the function name to execute, the user would only type the number associated with the option. The challenge was not implementing this with a dictionary structure which I have done successfully, but when using it would return program execution from the management class back to the driver application. I have commented out the code for now and will revisit it later for further debugging.
 
 The changes demonstrating these outcomes can be found here: have been pushed to the 'algorithms_and_data_structures' branch https://github.com/felixt-snhu/felixt-snhu.github.io.git
+
+
+### Databases
+
+The artifact I have enhanced for the database milestone continues the work on the “stock ticker” application developed in CS340 Client/Server development. Enhancements hereon provide an opportunity to demonstrate my expertise in area of databases and data mining. 
+
+The new features are implemented in the DbConnection class (DbConnection.py) and represented by four new MongoDB pipelines which are used to generate the datasets necessary to plot the following: 1. stock prices by sector by country, 2. stock prices by industry by country, 3. stock recommendation scores by sector by country and 4. stock recommendations by industry by country. 
+
+To expose these options to the user, the management class (management.py) has been extended with new methods available to the Trader base class. These methods contain the logic to make the appropriate methods calls in DbConnection class, retrieve the datasets and feed them into the “Pandas” data science library and plot the data graphically using a bar chart.
+Each of these new methods require two input parameters from which to generate the datasets, either a country and industry or a country and sector. Because the user may know what countries and sectors are available in the database/collections, two new helper functions have been added to the DbConnection class, one to retrieve all countries and another to retrieve all sectors.   
+
+The figure above demonstrates option to plot stock prices for the services sector in USA. First, the user selects the option number from the menu to plot the stock prices, provides the name of the sector which is Services and the name of the country which is USA. Depending on the dataset size, the plot may have to be zoomed in several time as it was the case here to visualize the content properly. 
+ 
+In the figure above, the user selects the option to plot stock prices for the toys and games industry in USA. 
+These options aid the trader to make informed decisions about which stock tickers are best performing in terms of stock price and recommendation score for a given sector or industry per given country.
+Because markets are always changing, the database (DbConnection) class was extended with a new method to let the Manager update the analyst recommendation for a given stock ticker, option which is now available to the Manger class object. 
+
+The changes described meet the course objectives I had planned for the database milestone of this project. 
+Implementing the new functionality using the database APIs was an iterative process in which I had to work directly with the database console and server where the database content was stored and test that the MongoDB pipelines and database helper functions were retrieving the results correctly. Once correct operation of pipelines was confirmed, I started creating the APIs to implement them and return the datasets to be consumed by the pandas Python data science library. Plotting the datasets was one of the challenges I had to encounter until I figured out the best type of graph to use to represent the data. A side effect of plotting large datasets with pandas as I have discovered was that graphs appeared to be squashed and labels jumbled together due to spacing issues, something I initially thought to be a misuse of the pandas library. Later, through trial and error and experimenting with the plot GUI controls I discovered that once zoomed into the graph, everything was showing correctly. 
+
+Finally, the new APIs had to be called from the manager class implementing the Trader and Manager objects and added to the user menu, which I also improved from the last milestone. Now, instead of inputting the option names manually at stdin, the menu is now implemented as a dictionary, which allows the user to simply provide the option number which makes for an improved user experience and usability. 
+
+The changes demonstrating these outcomes can be found here: have been pushed to the 'databases' branch https://github.com/felixt-snhu/felixt-snhu.github.io.git
