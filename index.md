@@ -6,6 +6,7 @@ Welcome to my project page where you can read about the enhancements and feature
 
 {% include youtube_embed.html id="l-0Q9c3d8nE" %}
 
+
 ### Software Design/Engineering 
 
 For this milestone I am redesigning the “stock ticker” application I have developed for my final project in CS340 Client Server Development and use software engineering paradigms like object-oriented programming to structure the code into separate modules, each performing a discrete function. 
@@ -22,10 +23,4 @@ Modifying the original artifact to demonstrate skills in software engineering an
 
 This was an exercise that tested my abilities to plan and implement new requirements using skills in software design and software engineering and provided an opportunity to learn about time management as well as analytical skills such as breaking up the task into smaller deliverables like creating the class for the trader and manager objects and creating the class for the database CRUD APIs.
 
-The changes demonstrating these outcomes can be found here:
-
-https://github.com/felixt-snhu/felixt-snhu.github.io/blob/master/capstone_project/DbConnection.py
-
-https://github.com/felixt-snhu/felixt-snhu.github.io/blob/master/capstone_project/dbcfg.py
-
-https://github.com/felixt-snhu/felixt-snhu.github.io/blob/master/capstone_project/management.py
+The changes demonstrating these outcomes can be found here: have been pushed to the 'software_design_engineering' branch https://github.com/felixt-snhu/felixt-snhu.github.io.git
