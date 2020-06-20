@@ -2,6 +2,24 @@
 
 Welcome to my project page where you can read about the enhancements and features I have implemented to demonstrate knowledge in Software Design/Engineering, Algorithms and Data Structures and Databases. 
 
+### Introduction and Professional Self-Assessment
+
+My academic journey in the Computer Science program began in 2013 when I started taking elective classes at my local community college while studying for my associate degree in Computer Information Systems before transferring to SNHU in 2018. 
+During this time, I learned about the fundamentals of software engineering, starting with low-level programming languages like assembler, then moved onto C and C++. 
+
+I learned about computer architecture, how to manipulate memory, to design an application using object-oriented programming concepts like inheritance and polymorphism and the importance of decoupling the design from the implementation. I have also learned how to use data structures like linked lists, graphs and trees, and assessing the efficiency of various algorithms like binary search, sorting and log O(n) notation. 
+
+At SNHU I gained other practical skills employed in the field of computer science such as Agile concepts, distributed version control (Git), no-SQL databases (MongoDB), graphics programming using C and OpenGL and how to develop applications adopting best security practices to avoid vulnerabilities.  
+To me the most important concepts I learned during my academic career are related to software design principles like OOP, security and best engineering practices like testing code, writing unit tests and performing code reviews before submitting code. 
+
+The narratives presented in the following pages showcase the thought process I used to implement the changes to demonstrate mastery in software engineering, algorithms and data structures and databases. The first artifact is a code review of the original application in which I describe the upcoming changes for the stock ticker application.
+
+Code reviews are an important artifact of software engineering and a practice commonly used in developing applications in a collaborative environment. Throughout the code review, I communicate to stakeholders the upcoming changes by performing a code walkthrough and side by side presentation by referring to a design diagram I put together. This aids in representing visually the various code blocks that ought to be changed or improved upon for the duration of the project.
+
+The new functionality is implemented incrementally in the spirit of Agile and is accompanied by unit testing after each iteration. 
+The following content serves to demonstrate my work and proficiency in software design/engineering, algorithms and data structures and databases and my application thereof in the field of computer science through a practical problem-solving approach.
+
+
 ### Code review
 
 {% include youtube_embed.html id="l-0Q9c3d8nE" %}
